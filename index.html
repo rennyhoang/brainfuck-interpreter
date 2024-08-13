@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Visual Brainf*ck Interpreter</title>
+    <link href="css/style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <form>
+      <h1>Visual Brainf*ck Interpreter</h1>
+      <textarea
+        rows="10"
+        cols="30"
+        id="code"
+        placeholder="brainf*ck code here"
+      ></textarea>
+      <div id="not-code">
+        <label for="speed">Speed</label>
+        <input
+          type="range"
+          class="slider"
+          name="speed"
+          id="speed"
+          min="100"
+          max="1000"
+        />
+        <input type="submit" value="RUN" />
+        <button type="button" id="stop">STOP</button>
+      </div>
+      <pre id="output">Output: </pre>
+    </form>
+    <div id="container"></div>
+  </body>
+  <script src="js/script.js"></script>
+</html>

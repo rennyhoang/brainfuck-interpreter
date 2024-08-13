@@ -1,0 +1,120 @@
+html::-webkit-scrollbar {
+  display: none;
+}
+
+html {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  min-height: 100vh;
+  overflow-y: hidden;
+  position: relative;
+  font-family: monospace;
+  background-color: #1e1e2e;
+  color: #cdd6f4;
+}
+
+form {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  position: fixed;
+  top: 10vh;
+  left: 50vw;
+  transform: translateX(-50%);
+}
+
+textarea {
+  resize: none;
+  background-color: #313244;
+  color: #cdd6f4;
+  border: 1px solid lavender;
+  line-height: 1em;
+}
+
+form > div {
+  display: flex;
+  flex-direction: column;
+}
+
+input,
+button {
+  font-size: 1em;
+  background-color: #313244;
+  color: #cdd6f4;
+  border: 1px solid #11111b;
+}
+
+input:active,
+button:active {
+  background-color: #45475a;
+}
+
+input:hover,
+button:hover {
+  border: 1px solid #b4befe;
+}
+
+#container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  transform: translateY(-60%);
+}
+
+#output {
+  font-size: 3em;
+  position: fixed;
+  top: 25vh;
+  left: 0;
+}
+
+#not-code {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.cell {
+  padding: 10vh;
+  background-color: #313244;
+  border-top: 2px solid #a6adc8;
+  border-bottom: 2px solid #a6adc8;
+  border-right: 1px solid #a6adc8;
+  border-left: 1px solid #a6adc8;
+  font-size: 2em;
+  font-family: monospace;
+}
+
+.cell:last-child {
+  border-right: 2px solid #a6adc8;
+}
+
+.cell:first-child {
+  border-left: 2px solid #a6adc8;
+}
+
+.pointer {
+  position: absolute;
+  top: -50px;
+}
+
+.index {
+  position: absolute;
+  bottom: -50px;
+  font-size: 1em;
+  color: #a6adc8;
+}
+
+input[type="range"] {
+  accent-color: #b4befe;
+  color: red;
+}
